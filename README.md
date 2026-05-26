@@ -1,4 +1,4 @@
-# bc-python
+# brocode-python
 
 > A personal Python learning repository featuring code exercises and Hinglish comments.
 
@@ -11,7 +11,7 @@
 
 ## 📝 Description
 
-bc-python is a personal, educational code repository built as a hands-on workspace for learning Python. Inspired by the popular online programming tutorial by Bro Code on python in 12 hours. The link is https://youtu.be/ix9cRaBkVe0. The repository serves as a practical log of fundamental syntax, coding concepts, and introductory exercises.
+brocode-python is a personal, educational code repository built as a hands-on workspace for learning Python. Inspired by the popular online programming tutorial by Bro Code on python in 12 hours. The link is https://youtu.be/ix9cRaBkVe0. The repository serves as a practical log of fundamental syntax, coding concepts, and introductory exercises.
 
 The repository operates with a minimalist structure, centering around root files like main.py and exercises.py. Code explanations are written directly in the source using Hinglish comments, translating standard programming logic into an informal blend of Hindi and English to facilitate intuitive learning. Note that not all exercises or projects are made; only the important ones are built and tracked.
 
