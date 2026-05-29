@@ -1,13 +1,13 @@
-# Pehle hum variables ko initialize karte hain.
+# First, we initialize variables.
 program = 0
 principle = 0
 rate = 0
 time = 0
 
-# Ye main loop hai jo program ko run karta rahega.
+# This is the main loop that runs the program.
 while not program == "Q":
 
-    # Idhar principle amount ke liye user input leta hun with validation.
+    # Here, get user input for the principle amount with validation.
     while True:
         principle = float(input("Enter the principle amount:  "))
 
@@ -17,7 +17,7 @@ while not program == "Q":
         else:
             break
 
-    # Ye loop rate of interest ke liye user input leta hai.
+    # This loop gets user input for the rate of interest.
     while True:
         rate = float(input("Enter the annual rate of interest (e.g., 5 for 5%):  "))
 
@@ -27,7 +27,7 @@ while not program == "Q":
         else:
             break
 
-    # Ye loop time period ke liye user input leta hai.
+    # This loop gets user input for the time period.
     while True:
         time = float(input("Enter the time period in years:  "))
 
@@ -37,10 +37,10 @@ while not program == "Q":
         else:
             break
 
-    # Idhar hum compound interest ka calculation karte hain.
+    # Here, we calculate the compound interest.
     total = principle * pow((1 + (rate / 100)), time)
 
-    # Ye total balance aur interest ko print karte hain.
+    # Print the total balance and interest.
     print(f"Your total balance (Principle + Interest) is: ₹{round(total, 2)}")
     print(f"Total interest earned: ₹{round(total - principle, 2)}")
 

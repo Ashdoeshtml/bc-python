@@ -1,19 +1,19 @@
 import random
 
-# Ye range set karte hain jo number mein hona chahiye.
+# Set the range in which the number should be.
 lowest = 1
 highest = 100
 
-# Ek random number generate karte hain.
+# Generate a random number.
 answer = random.randint(lowest, highest)
 guesses = 0
 is_running = True
 
-# Ye main game loop hai.
+# This is the main game loop.
 while is_running:
     guess = input("Enter your guess: ")
 
-    # Pehle check karte hain ki input digit hai ya nahi.
+    # First, check if the input is a digit or not.
     if guess.isdigit():
         guess = int(guess)
         guesses += 1

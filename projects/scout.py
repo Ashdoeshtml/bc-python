@@ -1,13 +1,13 @@
-# Pehle hum age input leta hun.
+# First, get age as input.
 age = int(input("Enter your age: "))
 
-# Age ke hisaab se league decide karte hain.
+# Decide the league based on age.
 if age < 10:
     print("You should join the Junior League.")
 
 elif age >= 10 and age <= 15:
 
-    # Ye group mein goals ke liye input leta hai.
+    # Get goals input for this age group.
     Goals = int(input("How many goals did you score last season?: "))
 
     if Goals < 0:

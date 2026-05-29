@@ -2,7 +2,7 @@ import random
 
 # ● ┌ ─ ┐ │ └ ┘
 
-# Ye dictionary har dice number ka ASCII art rakhti hai.
+# This dictionary stores ASCII art for each dice number.
 dice_art = {
     # fmt: off
     1: ("┌─────────┐", 
@@ -43,27 +43,27 @@ dice_art = {
     # fmt: on
 }
 
-# Ye main loop hai jo program ko chal raha rehta hai.
+# This is the main loop that keeps the program running.
 is_running = "y"
 
 while is_running == "y":
 
-    # Pehle dice list ko initialize karte hain.
+    # First, initialize the dice list.
     dice = []
     dice_number = int(input("How many dice?: "))
     total = 0
 
-    # Idhar random dice values generate karte hain.
+    # Here, generate random dice values.
     for die in range(dice_number):
         dice.append(random.randint(1, 6))
 
-    # Ye loop har dice ka ASCII art ko print karta hai.
+    # This loop prints the ASCII art for each die.
     for line in range(5):
         for die in dice:
             print(dice_art.get(die)[line], end="")
         print()
 
-    # Ye total ko calculate karte hain.
+    # Calculate the total.
     for die in dice:
         total += die
 

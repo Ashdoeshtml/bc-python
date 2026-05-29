@@ -1,23 +1,23 @@
-# Time module import karte hain.
+# Import the time module.
 import time
 
 program = None
 
-# Ye main loop hai jo countdown ko repeat karta hai.
+# This is the main loop that repeats the countdown.
 while not program == "Q":
 
-    # Pehle hum timer duration input leta hun.
+    # First, we take the timer duration as input.
     timer_duration = int(input("Enter the time in seconds: "))
 
-    # Ye loop countdown ko dekh raha hai.
+    # This loop handles the countdown.
     for counter in range(timer_duration, -1, -1):
 
-        # Idhar seconds, minutes, aur hours ko calculate karte hain.
+        # Here, we calculate seconds, minutes, and hours.
         seconds = counter % 60
         minutes = int(counter / 60) % 60
         hours = int(counter / 3600)
 
-        # Ye emoji ke hisaab se time ko display karta hai.
+        # Display time based on the emoji for each time range.
         if counter >= 500:
             print(f"{hours:02}:{minutes:02}:{seconds:02} 🤣🤣🤣 ")
 

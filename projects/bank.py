@@ -1,13 +1,13 @@
-# Ye function user ka balance display karta hai.
+# This function displays the user's account balance.
 def show_balance(balance):
     print(f"Your balance is {balance:.2f}")
 
 
-# Ye function deposit ke liye user input leta hai.
+# This function takes user input for a deposit.
 def deposit():
     amount = float(input("Enter amount to be deposited: "))
 
-    # Pehle check karte hain ki amount negative to nahi hai.
+    # First, check if the amount is not negative.
     if amount < 0:
         print("Enter a valid amount.")
         return 0
@@ -15,11 +15,11 @@ def deposit():
         return amount
 
 
-# Ye function withdrawal ke liye user input leta hai.
+# This function takes user input for a withdrawal.
 def withdraw(balance):
     amount = float(input("Enter amount to be withdrawn: "))
 
-    # Idhar check karte hain ki amount valid hai ya nahi.
+    # Here, we check if the amount is valid or not.
     if amount < 0:
         print("Enter a valid amount.")
         return 0
@@ -29,7 +29,7 @@ def withdraw(balance):
         return amount
 
 
-# Ye main function hai jo pura program ko control karta hai.
+# This is the main function that controls the entire program.
 def main():
 
     balance = 0
@@ -39,7 +39,7 @@ def main():
     print("Welcome to ASHWIN BANK!")
     print("***********************")
 
-    # Ye main loop hai jo program ko chal raha rehta hai.
+    # This is the main loop that keeps the program running.
     while is_running:
 
         print("1. Show Balance")
@@ -49,7 +49,7 @@ def main():
 
         choice = input("What do you want to do? (1-4): ")
 
-        # Ye menu options ko handle karte hain.
+        # This handles the menu options.
         if choice == "1":
             show_balance(balance)
         elif choice == "2":

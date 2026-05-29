@@ -1,16 +1,16 @@
-# Pehle main operator ke liye user input leta hun.
+# First, I get user input for the operator.
 operator = input("Enter an operator (+, -, *, /): ")
 
-# Phir dono value/number bhi mangvata hun.
+# Then, I ask for both numbers.
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 
-# Idhar sabse pehle maine check karvaya ki ye dono number 0 to nahi hain na?
+# Here, first I check if both numbers are zero or not.
 if num1 == 0 and num2 == 0:
     print("You have entered 0 for both.")
     print("The result will be zero in every case.")
 
-# Ye sab operator ke hisaab se calculate krne ke liye.
+# Calculate based on the operator entered.
 elif operator == "+":
     result = num1 + num2
 
@@ -23,11 +23,11 @@ elif operator == "*":
 elif operator == "/":
     result = num1 / num2
 
-# Idhar ye `else` check karta hain ki kisine koi operator nahi dala kya.
+# Here, the else clause checks if no valid operator was entered.
 else:
     result = None
     print("You didn't enter an operator.")
     print("Please enter an operator.")
 
-# Ye result print karta based on previous calculations.
+# Print the result based on previous calculations.
 print(f"The result is: {round(result, 3)}")

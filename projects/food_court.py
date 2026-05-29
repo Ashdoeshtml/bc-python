@@ -1,4 +1,4 @@
-# Ye menu dictionary hai jo items aur unke prices rakhti hai.
+# This menu dictionary stores items and their prices.
 menu = {
     "roll": 120,
     "burger": 90,
@@ -9,7 +9,7 @@ menu = {
     "lassi": 50,
 }
 
-# Pehle hum cart aur total ko initialize karte hain.
+# First, we initialize the cart and total.
 cart = []
 total = 0
 
@@ -18,7 +18,7 @@ for key, value in menu.items():
     print(f"{key:20}: ₹{value}")
 print("--------------------------")
 
-# Idhar user order liya jata hai.
+# Here, we take the user's order.
 while True:
     food = input("What do you want to order? (q to quit): ").lower()
     if food == "q":
@@ -26,7 +26,7 @@ while True:
     elif menu.get(food) is not None:
         cart.append(food)
 
-# Ye cart aur total ko display karte hain.
+# Display the cart and total.
 print("------- YOUR ORDER -------")
 for food in cart:
     total += menu.get(food)

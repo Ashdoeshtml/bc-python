@@ -1,7 +1,7 @@
 import random
 
 
-# Idhar sare symbol spin hote hain
+# All symbols are spun here.
 def spin_row():
 
     symbols = ["💀", "🎟️", "🔔", "⭐", "🎁", "👑"]
@@ -9,7 +9,7 @@ def spin_row():
     return [random.choice(symbols) for _ in range(3)]
 
 
-# Idhar symbol join hote hain
+# Symbols are joined here.
 def print_row(row):
 
     print("***************************")
@@ -17,7 +17,7 @@ def print_row(row):
     print("***************************")
 
 
-# Yahan symbol ke according paise dete hain
+# Money is given based on symbols here.
 def get_payout(row, bet):
 
     if row[0] == row[1] == row[2]:
@@ -49,7 +49,7 @@ def get_payout(row, bet):
     return 0
 
 
-# Ye program ka main function hai jidhar, calculations aur bet place hote hain
+# This is the main function where calculations and bet placement happen.
 def main():
 
     balance = 1000

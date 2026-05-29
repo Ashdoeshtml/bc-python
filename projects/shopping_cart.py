@@ -1,9 +1,9 @@
-# Pehle hum lists initialize karte hain.
+# First, we initialize lists.
 items = []
 prices = []
 total = 0
 
-# Ye loop shopping items add karta hai.
+# This loop adds shopping items to the cart.
 while True:
     item = input("What do you want to buy? (q to quit): ")
 
@@ -17,14 +17,14 @@ while True:
         items.append(item)
         prices.append(price)
 
-# Idhar cart ko display karte hain.
+# Here, we display the cart.
 print("----- YOUR CART -----")
 print()
 
 for item in items:
     print(f"{item.upper(): ^20}", end=" ")
 
-# Ye total ko calculate karte hain.
+# Calculate the total.
 for price in prices:
     total += price
 

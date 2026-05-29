@@ -1,4 +1,4 @@
-# Ye tuple questions rakhti hai.
+# This tuple contains the questions.
 questions = (
     "1. What has to be broken before you can use it?",
     "2. Which month of the year has 28 days?",
@@ -12,7 +12,7 @@ questions = (
     "10. I have a tail and a head, but no body.",
 )
 
-# Ye tuple har question ke options rakhti hai.
+# This tuple contains the options for each question.
 options = (
     ("A. A promise", "B. An egg", "C. A record", "D. A glow stick"),
     ("A. Only February", "B. Every other month", "C. All of them", "D. None of them"),
@@ -36,19 +36,19 @@ options = (
     ("A. A snake", "B. A coin", "C. A kite", "D. A shadow"),
 )
 
-# Pehle hum user ke guesses ko store karte hain.
+# First, we store user guesses.
 guesses = []
 
-# Ye tuple sahi answers rakhti hai.
+# This tuple contains the correct answers.
 answers = ("B", "C", "C", "C", "B", "B", "A", "C", "B", "B")
 
-# Score aur question number ko initialize karte hain.
+# Initialize the score and question number.
 score = 0
 
 ques_num = 0
 
 
-# Ye loop har question ko display karta hai.
+# This loop displays each question.
 for question in questions:
 
     print()
@@ -72,7 +72,7 @@ for question in questions:
     ques_num += 1
 
 
-# Ye results ko display karta hai.
+# Display the results.
 print("------------RESULTS------------")
 
 print("AMSWERS: ", end="")
